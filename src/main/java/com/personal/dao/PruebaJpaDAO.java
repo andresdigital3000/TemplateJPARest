@@ -31,11 +31,11 @@ public class PruebaJpaDAO extends AbstractJpaDAO<PruebaJpaDTO>{
         return em;
     }
     
-    public List<PruebaJpaDTO> findAll() {
+    /*public List<PruebaJpaDTO> findAll() {
         return super.findAll();
         /*javax.persistence.criteria.CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
         cq.select(cq.from(PruebaJpaDTO.class));
-        return em.createQuery(cq).getResultList();*/
-    }
+        return em.createQuery(cq).getResultList();
+    }*/
 }
 

@@ -27,21 +27,21 @@ import javax.inject.Inject;
 @Path("pruebajpa")
 public class PruebaServicioJPA {
     @EJB
-    protected PruebaJpaDAO pruebaFacade;
+    protected PruebaJpaDAO pruebaDAO;
     
     @GET
     @Produces({MediaType.APPLICATION_JSON})
     public List<PruebaJpaDTO> findAll() {
         //List<Politica> lista = new PoliticaDAO(Politica.class).findAll();
         //List<PruebaJpaDTO> lstPolitica = questFacade.
-        List<PruebaJpaDTO> lstPrueba = pruebaFacade.findAll();
+        List<PruebaJpaDTO> lstPrueba = pruebaDAO.findAll();
         return lstPrueba;
     }        
     
     @POST
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response create(PruebaJpaDTO entity) {
-        pruebaFacade.create(entity);
+        pruebaDAO.create(entity);
         return Response.status(Response.Status.CREATED).entity(this).build();
     }
     /*

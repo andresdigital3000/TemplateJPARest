@@ -1,0 +1,9 @@
+com/personal/modelo/PruebaBasicDTO.class
+com/personal/dao/PruebaJpaDAO.class
+com/personal/servicio/PruebaServicioJPA.class
+com/personal/servicio/PruebaServicioBasic.class
+com/personal/dao/AbstractJpaDAO.class
+com/personal/modelo/PruebaJpaDTO.class
+com/personal/dao/PruebaBasicDAO.class
+com/personal/modelo/PruebaJpaDTO_.class
+com/personal/servicio/Configuracion.class
